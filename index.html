@@ -1,1 +1,124 @@
-<!DOCTYPE html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" href="favicon.ico"><!-- 32×32 --><link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="img/favicons/apple.png"><!-- 180×180 --><link rel="preload" href="./fonts/Ubuntu-Medium.woff2" type="font/woff2" as="font" crossorigin="anonymous"><link rel="preload" href="./fonts/Ubuntu-Light.woff2" type="font/woff2" as="font" crossorigin="anonymous"><link rel="stylesheet" href="css/normalize.css"><link rel="stylesheet" href="css/slick.css"><link href="css/style.min.css" rel="stylesheet"><title>Пульсометры</title></head><body><header class="header container"></header><main class="main"><section class="notice"><div class="notice__slider slider"><div class="notice__slide notice__slide--green"><a href="#" class="notice__logo">учимся <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"><use href="img/sprite.svg#icon-logo"></use></svg><span>Онлайн</span></a><div class="notice__wrap"><p class="notice__par">Новички</p><h1 class="notice__title">Сделайте шаг<br>к новой профессии</h1><p class="notice__text">Курсы, которые помогут освоить востребованную профессию<br>с нуля или изучить новую специализацию</p><button class="notice__btn button button--green">Подробнее</button></div></div><div class="notice__slide notice__slide--blue"><a href="#" class="notice__logo">учимся <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"><use href="img/sprite.svg#icon-logo"></use></svg><span>Онлайн</span></a><div class="notice__wrap"><p class="notice__par">Новички</p><h1 class="notice__title">Сделайте шаг<br>к новой профессии</h1><p class="notice__text">Курсы, которые помогут освоить востребованную профессию<br>с нуля или изучить новую специализацию</p><button class="notice__btn button button--blue">Подробнее</button></div></div><div class="notice__slide notice__slide--pink"><div class="notice__slider-wrap"><a href="#" class="notice__logo">учимся <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"><use href="img/sprite.svg#icon-logo"></use></svg><span>Онлайн</span></a><div class="notice__wrap"><p class="notice__par">Новички</p><h1 class="notice__title">Сделайте шаг<br>к новой профессии</h1><p class="notice__text">Курсы, которые помогут освоить востребованную профессию<br>с нуля или изучить новую специализацию</p><button class="notice__btn button button--pink">Подробнее</button></div></div></div></div></section><section class="advantages container"><h2 class="visually-hidden">Наши преимущества</h2><ul class="advantages__list"><li class="advantages__item advantages__item--green"><h3 class="advantages__title">Получите <span>профессию</span></h3><p class="advantages__text">Базовые курсы для изучения новой сферы или профессии — с практикой и помощью в трудоустройстве</p></li><li class="advantages__item advantages__item--blue"><h3 class="advantages__title">Растите <span>в профессии</span></h3><p class="advantages__text">Курсы продвинутого уровня для тех, кто хочет усилить позиции в текущей профессии, вырасти в доходе, изучить новые инструменты</p></li><li class="advantages__item advantages__item--pink"><h3 class="advantages__title">Управляйте <span>эффективно</span></h3><p class="advantages__text">Курсы для руководителей, чтобы научиться эффективно решать сложные задачи в управлении командой и бизнесом</p></li></ul></section><section class="form-section"><div class="form-section__wrap container"><h2 class="form-section__title">Сделайте шаг<br>к новой профессии</h2><p class="form-section__text">Расскажите нам о своих целях и мы поможем выбрать подходящую программу.</p><form class="form-section__form form" method="get" action="#"><div class="form__section"><label class="form__label visually-hidden" for="name_field">Имя</label> <input class="form__text" type="text" name="name" id="name_field" placeholder="Вас зовут" required=""></div><div class="form__section"><label class="form__label visually-hidden" for="phone_field">Телефон</label> <input class="form__text" type="tel" name="phone" id="phone_field" placeholder="+7 (000) 000-00-00" required=""></div><button class="form__send" type="submit">Оставьте заявку</button></form><p class="form-section__add">Отправляя заявку, я соглашаюсь на обработку <span>персональных данных</span></p></div></section></main><footer class="footer"><div class="footer__wrap container"><a href="#" class="footer__logo">учимся <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><use href="img/sprite.svg#icon-logo"></use></svg><span>Онлайн</span></a></div></footer><script src="js/vendor/jquery-3.4.1.slim.js"></script><script src="js/vendor/slick.min.js"></script><script src="js/script.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
+    <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/apple.png"> <!-- 180×180 -->
+    <link rel="preload" href="./fonts/Ubuntu-Medium.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/Ubuntu-Light.woff2" type="font/woff2" as="font" crossorigin="anonymous">   
+    <link rel="stylesheet" href="css/normalize.css">    
+    <link rel="stylesheet" href="css/slick.css">
+    <link href="css/style.min.css" rel="stylesheet">
+    <title>Пульсометры</title>
+  </head>
+  <body>
+    <header class="header container">      
+    </header>
+    <main class="main">    
+      <section class="notice">
+        <div class="notice__slider slider">
+          <div class="notice__slide notice__slide--green">            
+            <a href="#" class="notice__logo">учимся <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30">
+              <use href="img/sprite.svg#icon-logo"></use>
+            </svg><span>Онлайн</span></a>
+            <div class="notice__wrap">              
+              <p class="notice__par">Новички</p>        
+              <h1 class="notice__title">
+                Сделайте шаг<br/> к новой профессии
+              </h1>
+              <p class="notice__text">
+                Курсы, которые помогут освоить востребованную профессию<br/> с нуля или изучить новую специализацию
+              </p>
+              <button class="notice__btn button button--green">Подробнее</button>      
+            </div>
+            
+          </div>   
+                    
+          <div class="notice__slide notice__slide--blue">            
+            <a href="#" class="notice__logo">учимся <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30">
+              <use href="img/sprite.svg#icon-logo"></use>
+            </svg><span>Онлайн</span></a>
+            <div class="notice__wrap">              
+              <p class="notice__par">Новички</p>        
+              <h1 class="notice__title">
+                Сделайте шаг<br/> к новой профессии
+              </h1>
+              <p class="notice__text">
+                Курсы, которые помогут освоить востребованную профессию<br/> с нуля или изучить новую специализацию
+              </p>
+              <button class="notice__btn button button--blue">Подробнее</button>  
+            </div>                
+          </div>                
+          <div class="notice__slide notice__slide--pink">            
+              <a href="#" class="notice__logo">учимся <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30">
+                <use href="img/sprite.svg#icon-logo"></use>
+              </svg><span>Онлайн</span></a>
+              <div class="notice__wrap">              
+                <p class="notice__par">Новички</p>        
+                <h1 class="notice__title">
+                  Сделайте шаг<br/> к новой профессии
+                </h1>
+                <p class="notice__text">
+                  Курсы, которые помогут освоить востребованную профессию<br/> с нуля или изучить новую специализацию
+                </p>
+                <button class="notice__btn button button--pink">Подробнее</button>  
+              </div>            
+          </div>       
+        </div>   
+      </section>
+
+      <section class="advantages container">
+        <h2 class="visually-hidden">Наши преимущества</h2>
+        <ul class="advantages__list">
+          <li class="advantages__item advantages__item--green">
+            <h3 class="advantages__title">Получите <span>профессию</span></h3>
+            <p class="advantages__text">Базовые курсы для изучения новой сферы или профессии — с практикой
+              и помощью в трудоустройстве</p>
+          </li>
+          <li class="advantages__item advantages__item--blue">
+            <h3 class="advantages__title">Растите <span>в профессии</span></h3>
+            <p class="advantages__text">Курсы продвинутого уровня для тех,
+              кто хочет усилить позиции в текущей профессии, вырасти в доходе, изучить новые инструменты</p>
+          </li>
+          <li class="advantages__item advantages__item--pink">
+            <h3 class="advantages__title">Управляйте <span>эффективно</span></h3>
+            <p class="advantages__text">Курсы для руководителей, чтобы научиться эффективно решать
+              сложные задачи в управлении
+              командой и бизнесом</p>
+          </li>     
+        </ul>
+      </section>
+      <section class="form-section">
+        <div class="form-section__wrap container">         
+            <h2 class="form-section__title">Сделайте шаг<br/> к новой профессии</h2>
+            <p class="form-section__text">Расскажите нам о своих целях и мы поможем выбрать подходящую программу.</p>           
+            <form class="form-section__form form" method="get" action="#">                      
+              <div class="form__section">
+                <label class="form__label visually-hidden" for="name_field">Имя</label>
+                <input class="form__text" type="text" name="name" id="name_field" placeholder="Вас зовут" required="">
+              </div>
+              <div class="form__section">
+                <label class="form__label visually-hidden" for="phone_field">Телефон</label>
+                <input class="form__text" type="tel" name="phone" id="phone_field" placeholder="+7 (000) 000-00-00" required="">             
+              </div>     
+              <button class="form__send" type="submit">Оставьте заявку</button>
+            </form>
+            <p class="form-section__add">Отправляя заявку, я соглашаюсь на обработку <span>персональных данных</span></p>
+             
+        </div>        
+      </section>  
+    </main>   
+    <footer class="footer">
+      <div class="footer__wrap container">
+        <a href="#" class="footer__logo">учимся <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+          <use href="img/sprite.svg#icon-logo"></use>
+        </svg><span>Онлайн</span></a>
+      </div>
+    </footer>
+    <script src="js/vendor/jquery-3.4.1.slim.js"></script>
+    <script src="js/vendor/slick.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
