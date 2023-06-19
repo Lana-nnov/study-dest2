@@ -1,1 +1,39 @@
-"use strict";$(".notice__slider").slick({dots:!0,arrows:!0,autoplay:!0,autoplaySpeed:2e3,responsive:[{breakpoint:768,settings:{arros:!1}}]}).on("beforeChange",(function(t,e,s,a){var o=document.querySelector('[data-slick-index="'+a+'"]'),i=document.getElementById("slick-slide-control0"+a),n=i.parentElement.parentElement;n.setAttribute("data-color","green"),o.classList.contains("notice__slide--green")?(i.classList.add("dot--green"),n.setAttribute("data-color","green")):o.classList.contains("notice__slide--blue")?(i.classList.add("dot--blue"),n.setAttribute("data-color","blue")):(i.classList.add("dot--pink"),n.setAttribute("data-color","pink"))}));
+'use strict';
+
+(function () {
+  var noticeSlider = $('.notice__slider');
+    noticeSlider.slick({
+      dots: true,
+      arrows: true,
+      autoplay: true,
+      autoplaySpeed: 2000,
+      responsive: [{
+        breakpoint: 768,
+        settings: {
+          arrows: false
+        }
+      }]   
+    }).on('beforeChange', function(event, slick, currentSlide, nextSlide) {     
+      var number = nextSlide;      
+      var section = document.querySelector('[data-slick-index=\"' + nextSlide + '\"]');      
+      
+      var activeButton = document.getElementById('slick-slide-control0' + nextSlide);    
+      var dots = activeButton.parentElement.parentElement;  
+      dots.setAttribute('data-color', 'green');
+      
+      if (section.classList.contains('notice__slide--green')) {        
+        activeButton.classList.add('dot--green');    
+        dots.setAttribute('data-color', 'green');
+       
+      } else if(section.classList.contains('notice__slide--blue')) {   
+        activeButton.classList.add('dot--blue'); 
+        dots.setAttribute('data-color', 'blue');       
+               
+      } else {        
+        activeButton.classList.add('dot--pink'); 
+        dots.setAttribute('data-color', 'pink');      
+      }          
+    
+    });   
+
+})();
